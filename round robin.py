@@ -15,7 +15,7 @@ def work(n):
 
 
 queue = deque()
-queue.extend([work(10), work(100), work(1000)])
+queue.extend([work(10), work(1000), work(100)]) # no matter the order you write the works the smallest work will always finish first
 done = dict()
 rounds = dict()
 time_sum = 0
