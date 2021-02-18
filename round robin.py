@@ -14,7 +14,7 @@ def work(n):
     yield arr
 
 
-queue = deque(maxlen=3)
+queue = deque()
 queue.extend([work(10), work(100), work(1000)])
 done = {}
 time_sum = 0
