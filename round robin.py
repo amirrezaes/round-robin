@@ -16,9 +16,9 @@ def work(n):
 
 queue = deque()
 queue.extend([work(10), work(100), work(1000)])
-done = {}
+done = dict()
+rounds = dict()
 time_sum = 0
-rounds = {}
 while len(queue) > 0:
     current = queue.popleft()
     beg = time.time()
